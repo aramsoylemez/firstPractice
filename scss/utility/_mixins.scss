@@ -1,5 +1,31 @@
+@use '../globals/' as *;
+
 @mixin shadow {
-    -webkit-box-shadow: -5px 12px 24px -6px rgba(28, 17, 10, 1);
-    -moz-box-shadow: -5px 12px 24px -6px rgba(28, 17, 10, 1);
-    box-shadow: -5px 12px 24px -6px rgba(28, 17, 10, 1);
+    -webkit-box-shadow: 8px 9px 24px -15px rgba(28, 17, 10, 1);
+    -moz-box-shadow: 8px 9px 24px -15px rgba(28, 17, 10, 1);
+    box-shadow: 8px 9px 24px -15px rgba(28, 17, 10, 1);
+}
+
+@mixin card {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    padding: 1em;
+    color: $contrast;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 1em;
+    border-radius: 0.5em;
+    
+}
+
+@mixin hover {
+    transform: translateY(-1rem);
+    opacity: 1;
+}
+
+@mixin frame {
+    border: 0.3em solid $contrast;
+    padding: 3em;
+    box-shadow: 5px 5px gray ;
 }

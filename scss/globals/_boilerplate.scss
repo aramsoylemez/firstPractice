@@ -1,3 +1,5 @@
+@use 'colors' as *;
+
 *, *::after, *::before {
     box-sizing: border-box;
     margin: 0;
@@ -9,5 +11,5 @@ img {
 }
 
 body {
-    background-color: #E4D6A7;
+    background-color: $background;
 }
