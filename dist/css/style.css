@@ -1,0 +1,145 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #E4D6A7;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 10em;
+  grid-template-areas: "logo menu menu menu";
+  padding: 1em;
+  width: 60%;
+  height: 4em;
+  margin: 1em auto;
+}
+.navbar__logo {
+  grid-area: logo;
+  font-family: Lato, sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1.3999999762px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #9B2915;
+}
+.navbar__list {
+  grid-area: menu;
+  justify-self: end;
+  margin-bottom: 0;
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: 1.3999999762px;
+}
+.navbar__list__elements {
+  list-style-type: none;
+  display: inline;
+  text-transform: uppercase;
+  margin-right: 1em;
+}
+.navbar__list__elements a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: ". content content .";
+  justify-content: center;
+  align-content: center;
+  margin: 7em 0 auto;
+  background-color: #1C110A;
+  color: #9B2915;
+  min-height: 5rem;
+}
+.footer__content {
+  grid-area: content;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "hero hero sidebar" "content content sidebar" "content content mail" "footer footer footer";
+  width: 55%;
+  margin: 0 auto;
+  grid-gap: 1em;
+}
+.container__hero {
+  grid-area: hero;
+  background-image: url("../../assets/img/lacan.jpg");
+  background-size: cover;
+  width: 100%;
+  aspect-ratio: 1/1.25;
+  padding: 3em;
+  color: #1C110A;
+  -webkit-box-shadow: -5px 12px 24px -6px rgb(28, 17, 10);
+  -moz-box-shadow: -5px 12px 24px -6px rgb(28, 17, 10);
+  box-shadow: -5px 12px 24px -6px rgb(28, 17, 10);
+}
+.container__hero__author {
+  font-family: Lato, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container__hero__header {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 1200;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.container__sidebar {
+  grid-area: sidebar;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+.container__sidebar__1 {
+  grid-column: 1/-1;
+}
+.container__sidebar__2 {
+  grid-column: 1/-1;
+}
+.container__sidebar__3 {
+  grid-column: 1/-1;
+}
+.container__content {
+  grid-area: content;
+  margin-right: 1em;
+  padding-right: 1em;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #1C110A;
+}
+
+.line {
+  border: 1px solid #1C110A;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+
+/*# sourceMappingURL=style.css.map */

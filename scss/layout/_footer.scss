@@ -1,0 +1,19 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    ". content content ."
+    ;
+    justify-content: center;
+    align-content: center;
+    margin: 7em 0 auto;
+    background-color: #1C110A;
+    color: #9B2915;
+    min-height: 5rem;
+    &__content {
+        grid-area: content;
+        margin: 0 auto;
+        justify-self: center;
+        align-self: center;
+    }
+}

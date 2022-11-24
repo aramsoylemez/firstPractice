@@ -1,0 +1,85 @@
+@use '../globals' as *;
+@use '../utility/' as *;
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "hero hero sidebar"
+        "content content sidebar"
+        "content content mail"
+        "footer footer footer"
+    ;
+    width: 55%;
+    margin: 0 auto;
+    grid-gap: 1em;
+
+    &__hero {
+        grid-area: hero;
+        background-image: url('../../assets/img/lacan.jpg');
+        background-size: cover;
+        width: 100%;
+        aspect-ratio: 1 / 1.25;
+        padding: 3em;
+        color: #1C110A;
+        
+        @include shadow;
+        
+        &__author {
+            font-family: $navbar;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        &__header {
+            font-family: $title;
+            font-size: 4rem;
+            font-style: italic;
+            font-weight: 1200;
+            letter-spacing: normal;
+            text-transform: none;
+        }
+    }
+
+    &__sidebar {
+        grid-area: sidebar;
+        display: grid;
+        grid-template-columns: 1fr;
+        font-family: $title;
+        font-style: italic;
+        &__1 {
+            grid-column: 1/-1;
+            
+            
+        }
+        &__2 {
+            grid-column: 1/-1;
+
+        }
+        &__3 {
+            grid-column: 1/-1;
+
+        }
+    }
+    &__content {
+        grid-area: content;
+        margin-right: 1em;
+        padding-right: 1em;
+        font-family: $text;
+        font-size: 1.2rem;
+        font-style: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        color: #1C110A;
+    }
+}
+
+.line {
+    border: 1px solid #1C110A;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+
+}
