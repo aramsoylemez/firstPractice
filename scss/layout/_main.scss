@@ -119,23 +119,8 @@
         }
     }
 
-    @include tablet {
-
-            display: grid;
-            grid-template-columns: 1fr;
-            width: 90%;
-
-        
-    }
 }
 
-.line {
-    border: 1px solid #1C110A;
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 3em;
-
-}
 
 
 a {

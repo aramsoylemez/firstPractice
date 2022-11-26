@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./dist/css/style.css">
     <title>Hover Lacan</title>
 </head>
 <body>
         <!-- NAVBAR HERE -->
-        <nav class="navbar">
+        <!-- <nav class="navbar" id="navbar">
             <div class="navbar__logo">
                 <strong>LACAN</strong>
             </div>
-            <ul class="navbar__list">
-                <li class="navbar__list__elements"><a href="">home</a></li>
-                <li class="navbar__list__elements"><a href="">about</a> </li>
-                <li class="navbar__list__elements"><a href="">life of lacan</a> </li>
-                <li class="navbar__list__elements"><a href="">contact</a></li>
-            </ul>
-        </nav>
-        <!-- JUST A STUPID LINE HERE -->
-        <div class="line">
+            <div class="navbar__list">
+                <a href="" class="navbar__list__elements">home</a>
+                <a href="" class="navbar__list__elements">about</a> 
+                <a href="" class="navbar__list__elements">life of lacan</a> 
+                <a href="" class="navbar__list__elements">contact</a>
+                <a href="javascript:void(0);" class=""icon onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav> -->
+        <nav class="navbar">
 
-        </div>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">life of Lacan</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+
+        </nav>
+        
         <!-- MAIN CONTAINER HERE -->
         <div class="container">
 
@@ -79,5 +93,6 @@
                 <span>aramsoylemez@gmail.com</span>
             </div>
         </div>
+        <script src="app/app.js"></script>
 </body>
 </html>
