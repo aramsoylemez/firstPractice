@@ -1,17 +1,17 @@
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1200px) {
     .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "hero hero hero"
-        "content content sidebar"
-        "frame frame sidebar"
-        ". mail sidebar";
+        grid-template-rows: auto;
+
+        &__sidebar {
+          display: none;
+        }
 
     }    
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -21,8 +21,14 @@
         "sidebar"
         "frame"
         "mail"
-
+        !important
         ;
+
+        &__sidebar {
+          &__1, &__2, &__3 {
+            max-height: 12rem;
+          }
+        }
     }
 }
 

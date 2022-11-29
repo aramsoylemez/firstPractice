@@ -247,18 +247,24 @@ a:visited {
   width: 80%;
 }
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1200px) {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "hero hero hero" "content content sidebar" "frame frame sidebar" ". mail sidebar";
+    grid-template-rows: auto;
+  }
+  .container__sidebar {
+    display: none;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "hero" "content" "sidebar" "frame" "mail";
+    grid-template-areas: "hero" "content" "sidebar" "frame" "mail" !important;
+  }
+  .container__sidebar__1, .container__sidebar__2, .container__sidebar__3 {
+    max-height: 12rem;
   }
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
